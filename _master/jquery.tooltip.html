@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>jQuery Dropdown Menus</title>
+	<link rel="stylesheet" href="css/main.css">
+	<!--css stylesheet for older Internet Explorer browser-->
+	<!--<link rel="stylesheet" type="text/css" href="tooltip_ie.css" />-->
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/quick-fix.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" type="text/css" href="includes/tooltip_ie.css" />
+		<![endif]-->
+	<script>
+		$(document).ready(function () {
+			$('.tooltip').tooltip({
+
+				//change default options here//
+				"backgroundColor": "#000",
+				"color": "#FFF",
+				"fontSize": "12px",
+				"border": "solid #f6e902"
+			});
+		});
+	</script>
+
+	<!--This style is for sample only-->
+	<style>
+		li {
+			text-align: center;
+		}
+
+		li a {
+			margin: 20px;
+			padding-top: 45px;
+			float: left;
+			height: 100px;
+			width: 300px;
+			background-color: gray;
+			color: white;
+			line-height: 20px;
+			text-decoration: none;
+			box-shadow: inset 0 2em 3em -2em white, inset 0 -2em 3em -2.5em black;
+		}
+
+		a:hover {
+			box-shadow: 0 0 3px green, 0 0 7px green;
+			color: #FFF;
+		}
+
+		a:visited {
+			color: #FFF;
+		}
+	</style>
+
+</head>
+
+<body>
+	<ul class="list-unstyled">
+
+		<!--FOR AJAX CALL and HTML CONTENT-->
+
+		<!--Use <a> tag with class="tooltip" data-tip-type="html" and rel=""  
+
+		IMPORTANT!  rel="" should contain reference to page and element that wants to be loaded from external html page. In this example, sample.html and div id = "summary". It can also be applied to an HTML page and elements without an id.  For example, rel="sample.html h1" will display all h1 elements in sample.html page -->
+
+		<li><a type="button" class="tooltip" href="heading.html" data-tip-type="html" rel="sample.html #summary">AJAX call with HTML content.<br><small>To close tootlip, click outside of tooltip</small></a></li>
+
+		<!--FOR TOOLTIP TEXT DESCRIPTION -->
+
+		<!--Use class="tooltip" data-tip-type="text" tooltip-title="" your description text should be located here.-->
+
+		<li><a class="tooltip" href="heading.html" data-tip-type="text" tooltip-title="Description text">Text with tooltip-title attribute</a></li>
+	</ul>
+</body>
+
+</html>

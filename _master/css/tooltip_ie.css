@@ -1,0 +1,9 @@
+/*  CSS Document                             */
+
+/* Rules for IE 7 & 8 */
+
+#tooltip-container {
+	width:200px;
+	background: none;
+	background-image: url(/img/ie_transparency.png);
+}

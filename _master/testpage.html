@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quick Fix Test Website</title>
+    <!--    CSS-->
+    <link href=" https://fonts.googleapis.com/css?family=Khula|Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .content p {
+            background-color: darkgrey;
+            border: thin solid black;
+        }
+    </style>
+    <!--    SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="js/quick-fix.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".menu").mainMenu({
+                //Add Options here
+                //                "backgroundColor": "#4b5f9b",
+                //                "highlightColor":  "aqua",
+                //                "submenuColor":    "#5c688a",
+                //                "toggleSpeed":     "1000",
+                //                "fontColor":       "white",
+                "menuNumber": "4"
+            });
+            $('.tooltip').tooltip();
+            $('#tooltip-container').css('z-index', 9999);
+            $('aside').stickyAside();
+            $('?').equalizeHeight();
+
+
+            $('#stories-1') // select wrapping element by ID
+                .find('.story') // select element to height adjust
+                .equalizeHeight() // sets tallest min-height to element
+                .css('background', 'red'); // enter css styles here
+
+            $('#stories-2')
+                .find('.story')
+                .equalizeHeight()
+                .css('background', 'green');
+
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <!--Menu-->
+    <nav class="menu">
+        <div class="menu-header"><span class="fa">&#xf0c9;</span>Menu</div>
+        <ul class="main-menu list-unstyled">
+            <li><a href="#style" class="tooltip" data-tip-type="text" tooltip-title="Description Text">Styles</a></li>
+            <li><a href="#grid" class="tooltip" data-tip-type="text" tooltip-title="Description Grid">Grid</a></li>
+            <li class="subMenu" data-trigger="submenu"><a href="#">CSS Components<span class="fa">&#xf150;</span></a>
+                <ul class="list-unstyled">
+                    <li data-trigger="submenu"><a href="#filters">Image Filters</a></li>
+                    <li class="table-unstyled" data-trigger="submenu"><a class="tooltip" data-tip-type="text" tooltip-title="Description Video" href="#video">Responsive Video</a></li>
+                    <li class="table-unstyled" data-trigger="submenu"><a href="#footer">Sticky Footer</a></li>
+                    <li class="table-unstyled" data-trigger="submenu"><a href="#hero">Hero Image</a></li>
+                </ul>
+            </li>
+
+            <li class="subMenu" data-trigger="submenu"><a href="">jQuery Plugins<span class="fa">&#xf150;</span></a>
+                <ul class="list-unstyled">
+                    <li class="table-unstyled" data-trigger="submenu"><a href="#">Menu</a></li>
+                    <li class="table-unstyled" data-trigger="submenu"><a href="#">Tooltips</a></li>
+                    <li class="table-unstyled" data-trigger="submenu"><a href="#sticky">Sticky Element</a></li>
+                    <li class="table-unstyled" data-trigger="submenu"><a href="#height">Height Adjust</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!--    Hero Image-->
+    <header class=" col-12-12">
+
+
+        <div>
+            <h1 id="hero">I'm The Hero</h1>
+        </div>
+        <div>
+            <button class="button">Learn More</button>
+        </div>
+    </header>
+    <main class="grid grid-tab">
+        <div class=" col-8-12">
+            <div class="content">
+                <h1>Individual Components</h1>
+                <h2 id="grid">The Grid</h2>
+                <div class="grid grid-tab">
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p> col-1-12</p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p> col-1-12</p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11/12 and 1/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-11-12">
+                        <div class="content">
+                            <p>col-11-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10/12 and 2/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-2-12">
+                        <div class="content">
+                            <p>col-2-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-10-12">
+                        <div class="content">
+                            <p>col-10-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9/12 and 3/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-3-12">
+                        <div class="content">
+                            <p> col-3-12</p>
+                        </div>
+                    </div>
+                    <div class="col-9-12">
+                        <div class="content">
+                            <p> col-9-12</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8/12 and 4/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-4-12">
+                        <div class="content">
+                            <p> col-4-12</p>
+                        </div>
+                    </div>
+                    <div class="col-8-12">
+                        <div class="content">
+                            <p>col-8-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7/12 and 5/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-5-12">
+                        <div class="content">
+                            <p>col-5-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-7-12">
+                        <div class="content">
+                            <p>col-7-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6/12 and 6/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-6-12">
+                        <div class="content">
+                            <p>col-6-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-6-12">
+                        <div class="content">
+                            <p>col-6-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7/12 and 5/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-7-12">
+                        <div class="content">
+                            <p>col-7-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-5-12">
+                        <div class="content">
+                            <p>col-5-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8/12 and 4/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-8-12">
+                        <div class="content">
+                            <p>col-8-12 </p>
+                        </div>
+                    </div>
+                    <div class="col-4-12">
+                        <div class="content">
+                            <p>col-4-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9/12 and 3/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-9-12">
+                        <div class="content">
+                            <p> col-9-12</p>
+                        </div>
+                    </div>
+                    <div class="col-3-12">
+                        <div class="content">
+                            <p>col-9-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10/12 and 2/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-10-12">
+                        <div class="content">
+                            <p> col-10-12</p>
+                        </div>
+                    </div>
+                    <div class="col-2-12">
+                        <div class="content">
+                            <p>col-10-12 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11/12 and 1/12 layout -->
+                <div class="grid grid-tab">
+                    <div class="col-11-12">
+                        <div class="content">
+                            <p> col-11-12</p>
+                        </div>
+                    </div>
+                    <div class="col-1-12">
+                        <div class="content">
+                            <p>col-1-12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-tab">
+                    <div class="col-12-12">
+                        <div class="content">
+                            <p>col-12-12</p>
+                        </div>
+                    </div>
+
+                </div>
+                <h2 id="filters">Filters</h2>
+                <figure class="col-3-12"><img class="image-responsive" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>No Filter</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive blur" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>blur</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive brightness" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>brightness</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive contrast" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>contrast</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive drop-shadow" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>drop-shadow</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive grayscale" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>grayscale</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive hue-rotate" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>hue-rotate</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive invert" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>invert</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive opacity" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>opacity</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive saturate" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>saturate</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive sepia" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>sepia</figcaption>
+                </figure>
+
+                <figure class="col-3-12"><img class="image-responsive contrast" src="img/Bradley-Hand-Quick-Fix.png">
+                    <figcaption>contrast and brightness</figcaption>
+                </figure>
+
+                <div class="col-6-12">
+                    <h2 id="video" class="tooltip" data-tip-type="text" tooltip-title="This is a video file from Youtube">Video Responsive</h2>
+                    <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uPov7uKu8Ys" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-6-12">
+                    <h2 class="tooltip" data-tip-type="html" rel="sample.html #summary">Video Embed</h2>
+                    <div>
+                        <video src="media/EmberDeflector.mp4" controls></video>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="content">
+                    <h1 id="style" class="font-large">Styling Guide</h1>
+
+                    <h1> Heading one</h1>
+                    <h2> Heading two</h2>
+                    <h3> Heading three</h3>
+                    <h4> Heading four</h4>
+                    <h5> Heading five</h5>
+                    <h6> Heading six</h6>
+                    <p>Framework X uses Khula family of google fonts. The framework uses rems with a base font of 16px. In addition
+                        to the basic six headings, it provides a <span style="color:red">.font-large</span> class for extra
+                        large font size.</p>
+                    <hr>
+                    <h2>Other elements</h2>
+                    <p><a>For anchors use the a tag</a></p>
+                    <p><em>For italics use the em tag</em></p>
+                    <p><small>For small use the small tag</small></p>
+                    <p><strong>For bold use the strong tag</strong></p>
+                    <p>
+                        <mark>For highlighting use the mark tag</mark>
+                    </p>
+                    <p>For abbreviations and acronyms use the abbr tag</p>
+                    <blockquote>For a section that is quoted from another source use the blockquote tag </blockquote>
+                    <p>for addresses use the address tag</p>
+                    <br>
+                    <hr>
+                    <h2 class="text-uppercase"> Heading with <span class="text-lowercase" style="color:red">.text-uppercase</span> class.</h2>
+                    <br>
+                    <hr>
+                    <h2>Alignment classes</h2>
+                    <h3 class="text-left">Text with <span style="color:red">.text-left</span> class. </h3>
+                    <h3 class="text-center">Text with <span style="color:red">.text-center</span> class. </h3>
+                    <h3 class="text-right">Text with <span style="color:red">.text-right</span> class. </h3>
+                    <br>
+                    <hr>
+                    <h1>Table</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                    </table>
+
+                    <h2>Table with <span style="color:red">.table-bordered</span> class.</h2>
+                    <table class="table-bordered">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>94</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Table with <span style="color:red">.table-striped</span> class.</h2>
+                    <table class="table-striped">
+
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Tas</td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Table with <span style="color:red">.table-responsive</span> class.</h2>
+                    <table class="table-responsive">
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Place of Birth</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                            <td>Female</td>
+                            <td>Los Angeles</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                            <td>Female</td>
+                            <td>San Francisco</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <hr>
+
+                    <h1>List</h1>
+                    <ul>
+                        <li>This is list item 1</li>
+                        <li>This is list item 2</li>
+                        <li>This is list item 3</li>
+                    </ul>
+
+                    <h2>List with <span style="color:red">.list-unstyled</span> class.</h2>
+                    <ul class="list-unstyled">
+                        <li>This is list item 1</li>
+                        <li>This is list item 2</li>
+                        <li>This is list item 3</li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <h4>Font awesome included with the i tag and Font awesome classes. </h4>
+
+                    <i class="fa fa-envelope-open fa-5x" aria-hidden="true"></i>
+                    <br>
+                    <hr>
+                    <h1>Helper Classes</h1>
+                    <h3 class="move-right">Element floats right with <span style="color:red">.move-right</span> class.</h3>
+                    <h3 class="move-left">Element floats left with <span style="color:red">.move-left</span> class.</h3>
+                    <h3 class="clearfix">Element clears with <span style="color:red">.clearfix</span> class.</h3><br>
+                    <hr>
+
+                    <h1>Buttons</h1>
+                    <h3>Normal size button, reset and input</h3>
+                    <input type=submit value="submit">
+                    <br>
+                    <br>
+                    <h3>Large, small and extra small size buttons</h3>
+                    <button class="button-large">large</button>
+                    <br>
+                    <br>
+                    <button class="button-small">small</button>
+                    <br>
+                    <br>
+                    <button class="button-x-small">extra small</button>
+                    <br>
+                    <h3>button with <span style="color:red">.active</span> class.</h3>
+                    <input type=submit class="active" value="active button">
+                    <br>
+                    <hr>
+                    <h3>Responsive images with <span style="color:red">.image-responsive</span> class.</h3>
+                    <br>
+                    <hr>
+                    <h1>Form</h1>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Tell me about yourself</legend>
+                            <label for="firstname">First name: </label>
+                            <input type="text" id="firstname">
+                            <label for="lastname">Last name: </label>
+                            <input type="text" id="lastname">
+                            <label for="email">Email: </label>
+                            <input type="text" id="email"><br>
+                            <p>Select your gender:</p>
+                            <input type="radio" name="sex" value="Male"> Male<br>
+                            <input type="radio" name="sex" value="Female"> Female<br><br>
+                            <select>
+                    <option>Where do you live?</option>
+                  	<option value="SF">San Francisco</option>
+                 	<option value="LA">Los Angeles</option>
+                  	<option value="NY">New York</option>
+                  	<option value="Seattle">Seatle</option>
+                    </select>
+                            <br>
+                            <p>Comments:</p>
+                            <textarea></textarea>
+                            <br>
+                            <input type="submit" value="Send"> <input type="reset">
+
+                        </fieldset>
+                    </form>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="grid grid-tab">
+        <div class="col-4-12">
+            <div class="content">
+                <aside id="sticky" class="move-right">Sticky Sidebar</aside>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="height">Height Adjust</h2>
+    <div></div>
+    <footer id="footer" class="footer footer-center height-100">
+        <p>I'm your footer</p>
+    </footer>
+
+</body>
+
+</html>

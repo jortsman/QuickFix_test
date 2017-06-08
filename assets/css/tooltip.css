@@ -1,0 +1,24 @@
+/* Tooltip CSS*/
+
+#tooltip-container {
+	position:absolute;
+	padding:20px;
+	margin: 0 0 .5em 0;
+	max-width: 200px;
+	border-radius:12px;
+	display:none;
+}
+
+#tooltip-container h1,
+#tooltip-container a {
+	margin: 0 0 .5em 0;
+	color: #FFF;
+	font-size: 12px;
+}
+ 
+#tooltip-container a {
+	color: #00a8ff;
+}
+
+
+.tooltip-html-source { display:none; }

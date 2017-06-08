@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Clean Eating</title>
+
+  <!--GENERAL CSS------>
+  <link href=" https://fonts.googleapis.com/css?family=Khula|Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!---CONSOLIDATES CSS QUICK FIX FRAMEWORK SHEETS. FOR INDIVIDUAL SHEETS REFER TO CCS FOLDER.--->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!---FOR QUICK FIX GENERAL STYLING CLASSES REFER TO STYLING.CSS IN THE CCS FOLDER.--->
+
+  <!---JQUERY CDN------>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!---CONSOLIDATES JS QUICK FIX FRAMEWORK SHEETS. FOR INDIVIDUAL SHEETS REFER TO JS FOLDER.--->
+  <script src="assets/js/quick-fix.js"></script>
+
+  <!-- PLUGIN SCRIPTS GO HERE------>
+  <script>
+    $(document).ready(function() {
+      $(".menu").mainMenu({
+        //Add Options here
+        "backgroundColor": "#805113",
+        "highlightColor": "#F47844",
+        "submenuColor": "#5c688a",
+        "toggleSpeed": "1000",
+        "fontColor": "white",
+        "menuNumber": "5"
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#stories-1') // select wrapping element by ID
+        .find('.story') // select element to height adjust
+        .equalizeHeight(); // sets tallest min-height to element
+    });
+  </script>
+  <script>
+		$(document).ready(function () {
+			$('.tooltip').tooltip({
+//change default options here//
+				"backgroundColor": "#000",
+				"color": "#FFF",
+				"fontSize": "12px",
+				"border": "solid #f6e902"
+			});
+		});
+	</script>
+
+</head>
+
+<!--BODY OF DOCUMENT ------>
+
+<body>
+  <div id="container">
+    <!--     NAVBAR-->
+    <nav class="menu">
+      <div class="menu-header"><span class="fa">&#xf0c9;</span>Menu</div>
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="featured.html">Featured Recipe</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="history.html">Company History</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header>
+    <div class="grid grid-tab">
+      <div class="col-12-12">
+        <!---YOUR GRID CLASS CHOICE ------>
+
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="grid grid-tab">
+    <div class="col-12-12">
+  <!---YOUR GRID CLASS CHOICE ------>
+    <div class="content">
+      <div class="img-box">
+        <div class="text-box">
+          <h1>Contact Us<h1>
+          </div>
+        </div>
+      </div>
+      <h2>Let's Chat</h2>
+      <h4>Send Us An Email To Schedule An Appointment</h4>
+    </div>
+  </div>
+  <div class="grid grid-tab">
+    <div class="col-6-12">
+      <div class="content">
+        <form action="#" method="post">
+          <fieldset>
+          <legend>Tell me about yourself</legend>
+          <label for="firstname">First name: </label>
+              <input type="text" id="firstname">
+          <label for="lastname">Last name: </label>
+            <input type="text" id="lastname">
+          <label for="email">Email: </label>
+            <input type="text" id="email"><br>
+          <p>Select your gender:</p>
+          <input type="radio" name="sex" value="Male"> Male<br>
+          <input type="radio" name="sex" value="Female"> Female<br><br>
+          <select>
+          <option>Where do you live?</option>
+        	<option value="SF">San Francisco</option>
+        	<option value="LA">Los Angeles</option>
+        	<option value="NY">New York</option>
+        	<option value="Seattle">Seatle</option>
+          </select>
+          <br>
+          <p>Comments:</p>
+          <textarea></textarea>
+          <br>
+          <input type="submit" value="Send"> <input type="reset">
+          </fieldset>
+       </form>
+      </div>
+    </div>
+    <div class="col-6-12">
+      <div class="content">
+        <h5>Our Location</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.0952271340107!2d-117.2738403264805!3d32.84020863031798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc03e3e1fbb3bf%3A0xc4e5337e67c67e7b!2sBarry+Lawrence+Ruderman+Antique+Maps!5e0!3m2!1sen!2sus!4v1496961924337" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <address>
+          <strong>Clean Eating LLC</strong><br>
+          123 Street Road<br>
+          La Jolla, California 92037
+        </address>
+        <p>Plaid palo santo +1 hot chicken. Ramps tumblr subway tile everyday carry meggings green juice wolf, austin iceland pork belly. Williamsburg retro salvia fixie austin whatever. Before they sold out chicharrones craft beer, deep v umami twee austin. Next level mustache migas fingerstache, post-ironic literally knausgaard cronut roof party retro squid. Godard VHS sriracha 90's stumptown, vice vape synth wolf jianbing skateboard coloring book. Actually iceland tumeric keytar, kinfolk glossier swag.</p>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <div class="footer footer-center height-100">
+    <p>Copyright &copy; 2017. Clean Eating Inc. All Rights Reserved.</p>
+</div>
+</body>
+
+</html>

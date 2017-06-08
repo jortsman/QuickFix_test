@@ -1,0 +1,43 @@
+////// Downloadable File and General Issues with Markup
+1. Too many .html files in the root. This quickly becomes confusing as to which to use to begin working
+2. CSS files are not organized at all. I see that there are separate files that all combine in the main.css file but this is too confusing. If they needed to be broken out, there should have been a separate folder structure to help with organization.
+3. ^^^ Same issue with the JS files
+4. Poor all around organization with extra files and no apparent folder organization/structure
+5. Why is there a 5MB video in the downloadable files?
+6. Genuinely lost here and very frustrated because nothing seems to work.  Copying and pasting code snippets from the documentation is a waste of time. There are plenty of missing div tags
+7. Sticky Aside does not work.
+8. Hero does not center properly on mobile.
+9. Hero has an extra empty button appear randomly when you keep the button from the documentation.
+10. Very sloppy documentation. Too many missing tags, missing closing tags, and extra characters that are careless.
+11. Using <header> and <footer> tags adds a purple background color by default.
+12. Indentation is nonexistent in the HTML doc setup from the Getting Started tab.
+13. Language in buttons that are in multiple column row layouts can get cut off when screen size decreases.  Buttons are a fixed width or something but an example is the "Our History" button on my homepage...that text "History" completely disappears on smaller screens. 
+
+////// Homepage (Wordpress Marketing Site)
+1. Once you leave this main page, the user is taken to Nefer's Github pages site...which is fine....apart from the fact that there is no way to go back to the Wordpress website and access the downloadable file.
+
+////// CSS
+
+1. Sticky footer is not working to illustrate its use in the example
+2. Typo: "Getting Started" menu option is written "Getting Sterted"
+3. Clicking on the CSS tab in the menu repeatedly will flash a blue nav that seems to be part of another website
+4. 3 Unresolved console errors related to YouTube
+5. Hero image
+6. Extra " in the opening <figure> tag for the image filters that breaks code.
+7. Missing div tags in the documentation for the Hero which straight up breaks code. Not to mention the poor indentation in the docs to try to troubleshoot.
+8. Youtube documentation very poorly indented.
+9. Sticky footer does not work...I'm assuming that it's supposed to stick statically to the bottom of the browser and it's not working for me as documented when I use Safari and Chrome. Indentation is also very poor and inconsistent.
+10. Sticky footer needs top padding because any content added is basically flush against the top of the element.
+11. The YouTube embed code is poorly documented and will not work if someone just replaces the video link with the URL directly the search bar. Simply going to the search bar, copying the link and replacing the link within the provided code snippet will break the render a white block within the container.  What a user actually has to do to get it to work is to click Share button from the video page and then select the link from the Embed tab in order to make this widget work. Very poor documentation here.
+12. Typo: "toutube" instead of YouTube .....Yes, I've read the documentation that meticulously.
+13. Grid is literally fixed no matter the screen size. If you choose to use 1/2 + 1/2 columns, breakpoints will not affect the arrangement of the elements. So if you have an image next to a block of text, the image will keep shrinking but maintain a 1/2 + 1/2 column layout so the text keeps growing in a and becomes as long as necessary to fix all of the content.
+
+////// jQuery
+
+1. CSS styles in the menu options do not apply to dropdown menus. I copied the source code exactly from the CSS
+2. Sticky Aside does not work. I copied and pasted the code snippets as documented.
+3. Height Adjuster box does not work. Again, I copied and pasted the code as documented online.
+4. Last a tag is not properly closed and code breaks on the tool tip as documented.
+5. Height adjuster box's doc ready function is not closed properly within the usage documentation.
+6. On the whole, just very inconsistently documented. The spacing is all over the place, and certain plugins have opening/closing <script> tags in the docs and some don't. I don't mean to beat a dead horse here but all of these careless documenting leads to inconsistent results in code and broken code. Its tough to troubleshoot when tags don't line up and where there is no consistency.
+7. Responsive menu breaks if a user deletes the sub-navigation items. By this I mean that the plugin options become useless and a user loses the hover UX and colors get reset to some default colors as defined by the team.
